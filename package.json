@@ -1,0 +1,154 @@
+{
+    "engines": {
+        "node": ">=16.0.0",
+        "yarn": "please-use-npm",
+        "npm": ">=7.10.0"
+    },
+    "dependencies": {
+        "@reduxjs/toolkit": "^1.8.1",
+        "axios": "^0.26.1",
+        "clsx": "^1.1.1",
+        "dayjs": "^1.11.1",
+        "framer-motion": "^6.3.3",
+        "pdf-lib": "^1.17.1",
+        "prop-types": "^15.8.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-redux": "^7.2.8",
+        "react-router": "^6.3.0",
+        "react-router-dom": "^6.2.2",
+        "react-scripts": "5.0.0"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^17.0.2",
+        "@commitlint/config-conventional": "^17.0.2",
+        "eslint": "^8.13.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-react-hooks": "^4.4.0",
+        "husky": "^7.0.0",
+        "source-map-explorer": "^2.5.2",
+        "stylelint": "^14.7.1",
+        "stylelint-config-prettier": "^9.0.3",
+        "stylelint-config-standard": "^25.0.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "eject": "react-scripts eject",
+        "analyze": "source-map-explorer 'build/static/js/*.js'",
+        "lint:js": "eslint --ext .js,.jsx src/",
+        "lint:css": "stylelint \"src/**/*.css\"",
+        "prepare": "husky install",
+        "prettier": "prettier --write ."
+    },
+    "eslintConfig": {
+        "extends": [
+            "eslint:recommended",
+            "react-app",
+            "plugin:react-hooks/recommended",
+            "prettier"
+        ],
+        "ignorePatterns": [
+            "node_modules/",
+            "build/"
+        ],
+        "rules": {
+            "react/react-in-jsx-scope": [
+                "off"
+            ],
+            "max-len": [
+                "error",
+                {
+                    "code": 120,
+                    "ignoreUrls": true,
+                    "ignoreRegExpLiterals": true,
+                    "ignoreStrings": true,
+                    "ignoreTemplateLiterals": true
+                }
+            ],
+            "quotes": [
+                "error",
+                "single"
+            ],
+            "semi": [
+                "error",
+                "always"
+            ],
+            "no-loop-func": [
+                "error"
+            ],
+            "comma-style": [
+                "error",
+                "last"
+            ],
+            "space-before-blocks": [
+                "error",
+                "always"
+            ],
+            "no-mixed-spaces-and-tabs": [
+                "error"
+            ],
+            "no-unused-vars": [
+                "error"
+            ],
+            "no-extra-semi": [
+                "error"
+            ],
+            "no-console": [
+                "warn"
+            ],
+            "no-debugger": [
+                "warn"
+            ],
+            "block-spacing": [
+                "error",
+                "always"
+            ],
+            "max-nested-callbacks": [
+                "error",
+                {
+                    "max": 7
+                }
+            ],
+            "no-trailing-spaces": [
+                "error"
+            ],
+            "semi-spacing": [
+                "error",
+                {
+                    "before": false,
+                    "after": true
+                }
+            ],
+            "no-var": [
+                "error"
+            ],
+            "indent": [
+                "error",
+                4,
+                {
+                    "SwitchCase": 1,
+                    "offsetTernaryExpressions": true
+                }
+            ],
+            "no-multi-spaces": [
+                "error"
+            ],
+            "no-control-regex": [
+                "off"
+            ]
+        }
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

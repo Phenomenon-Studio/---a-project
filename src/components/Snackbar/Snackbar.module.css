@@ -1,0 +1,32 @@
+.wrap {
+    position: fixed;
+    z-index: 30;
+    top: 10px;
+    right: 10px;
+    padding: 20px 24px;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+    max-width: 290px;
+}
+
+.iconWrap {
+    flex-shrink: 0;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: var(--color-light-100);
+    width: 30px;
+    height: 30px;
+}
+
+.icon {
+    width: 13px;
+    height: 13px;
+}
+
+.content {
+    color: var(--color-white);
+}
+
+.content::first-letter {
+    text-transform: capitalize;
+}

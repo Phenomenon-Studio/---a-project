@@ -1,0 +1,56 @@
+:root {
+    /* Fonts */
+    --font-primary: "Avenirnextcyr", sans-serif;
+    --font-secondary: "Playfairdisplay", sans-serif;
+    --font-third: "Monumentextended", sans-serif;
+
+    /* Colors */
+    --color-primary: #2d2a26;
+    --color-bg-main: #e5e5e5;
+    --color-white: #ffffff;
+    --color-light-100: #fcfcf0;
+    --color-light-200: #f7f7e9;
+    --color-light-300: #f3f3f7;
+    --color-light-400: #f3f3e7;
+    --color-light-500: #e4e4cf;
+    --color-warn-100: #f87c56;
+    --color-warn-200: #f68d2e;
+    --color-info-100: #ff5555;
+    --color-aqua-100: #8abadd;
+    --color-rose-100: #f5cabf;
+    --color-rose-200: #ecb3cb;
+    --color-dark-100: #524c45;
+    --color-dark-200: #464442;
+    --color-muted-100: rgba(45, 42, 38, 0.6);
+
+    /* Transition */
+    --transition: 0.2s;
+    --focus-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    /* Box-Shadows */
+    --focus-shadow: 0 0 0 3px rgb(138, 186, 221, 0.25);
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-primary);
+    background-color: var(--color-bg-main);
+    letter-spacing: inherit;
+}
+
+.lock-scroll-y {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+}
